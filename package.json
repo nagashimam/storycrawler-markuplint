@@ -1,19 +1,28 @@
 {
-  "name": "storycrawler-markuplint",
-  "version": "0.0.1",
-  "description": "crawl all stories and lint the dom using markuplint",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "test"
-  },
-  "keywords": [
-    "Storybook",
-    "markuplint"
-  ],
-  "author": "nagashimam",
-  "license": "ISC",
-  "devDependencies": {
-    "@tsconfig/node16": "^1.0.2",
-    "typescript": "^4.6.3"
-  }
+    "name": "storycrawler-markuplint",
+    "version": "0.0.1",
+    "description": "crawl all stories and lint the dom using markuplint",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "test",
+        "build": "npx tsc",
+        "start": "mkdir -p rendered && npm run build && node dist/index.js",
+        "lint": "markuplint rendered/*.html"
+    },
+    "keywords": [
+        "Storybook",
+        "markuplint"
+    ],
+    "author": "nagashimam",
+    "license": "ISC",
+    "devDependencies": {
+        "@tsconfig/node16": "^1.0.2",
+        "@types/jsdom": "^16.2.14",
+        "markuplint": "^2.5.0",
+        "typescript": "^4.6.3"
+    },
+    "dependencies": {
+        "jsdom": "^19.0.0",
+        "storycrawler": "^3.1.6"
+    }
 }

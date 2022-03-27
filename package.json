@@ -11,5 +11,9 @@
     "markuplint"
   ],
   "author": "nagashimam",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "typescript": "^4.6.3"
+  }
 }

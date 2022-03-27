@@ -1,0 +1,15 @@
+{
+  "name": "storycrawler-markuplint",
+  "version": "0.0.1",
+  "description": "crawl all stories and lint the dom using markuplint",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Storybook",
+    "markuplint"
+  ],
+  "author": "nagashimam",
+  "license": "ISC"
+}
